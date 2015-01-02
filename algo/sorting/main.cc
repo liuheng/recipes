@@ -1,7 +1,7 @@
-#include "sorting.h"
-#include "utils.h"
 #include <cstring>
 #include <cstddef>
+#include "sorting.h"
+#include "utils.h"
 
 using namespace std;
 
