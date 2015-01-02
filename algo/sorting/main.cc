@@ -1,8 +1,11 @@
 #include "sorting.h"
 #include "utils.h"
+#include <cstring>
+#include <cstddef>
 
+using namespace std;
 
-int _tmain()
+int main()
 {
 
 ///////////////////// SORTING ALGORITHMS BEGIN ///////////////////////////

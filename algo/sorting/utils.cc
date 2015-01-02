@@ -1,6 +1,7 @@
 #include "utils.h"
 #include <ctime>
 #include <cstdlib>
+#include <cstring>
 #include <fstream>
 #include <iterator>
 #include <vector>
