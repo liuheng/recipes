@@ -3,7 +3,7 @@
 
 char *strcpy(char *to, const char * from) { // from为const char *，返回char *
     assert(to != NULL && from != NULL); // 参数检查
-    char *ret = to;
+    char *ret = to; // 备份to指针
     // 考虑内存重叠
     if (to < from) {// 从前往后复制
         while ((*to++ = *from++) != '\0') {
