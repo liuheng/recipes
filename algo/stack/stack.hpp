@@ -1,4 +1,7 @@
-#pragma once
+#ifndef _STACK_HPP
+#define _STACK_HPP
+
+#include <sys/types.h>
 
 #define MAX_STACK_SIZE (100)
 
@@ -51,7 +54,7 @@ public:
 		}
 		else
 		{
-			return T();
+			return -1;
 		}
 	}
 	inline bool IsEmpty()
@@ -82,3 +85,5 @@ private:
 	T arr[MAX_STACK_SIZE];
 	size_t stack_size;
 };
+
+#endif
