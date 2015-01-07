@@ -3,7 +3,9 @@
 
 #include <sys/types.h>
 
+#ifndef MAX_STACK_SIZE
 #define MAX_STACK_SIZE (100)
+#endif
 
 //ADT Stack
 template <class T>
@@ -43,7 +45,7 @@ public:
 		}
 		else
 		{
-			return T();
+			return -1;
 		}
 	}
 	inline T Top()
