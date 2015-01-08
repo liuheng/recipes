@@ -1,1 +1,1 @@
-recipes for specific programming language
+code snippets for c++, python, go, javascript
