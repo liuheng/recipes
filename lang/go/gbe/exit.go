@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-    defer fmt.Println("defer fmt.Println")
-    os.Exit(3);
+    defer fmt.Println("defer fmt.Println will not be executed")
+    os.Exit(123);
 }
