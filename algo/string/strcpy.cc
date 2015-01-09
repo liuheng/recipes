@@ -34,7 +34,7 @@ char *strcpy(char *to, const char * from) { // from为const char *，返回char 
 
 int main() {
     // 测试用例考虑各种情况
-    char *from = "hello world";
+    const char *from = "hello world";
     char to[32] = {0};
     strcpy (to, from);
     printf("to is %s\n", to);

@@ -28,7 +28,7 @@ size_t strlen1(const char *s) {
 int main() {
     // 测试用例考虑各种情况
     char *s0 = NULL;
-    char *s1 = "hello world";
+    const char *s1 = "hello world";
 
     printf("size of %s is %lu\n", "hello world", strlen("hello world"));
     printf("size of %s is %lu\n", s0, strlen(s0));
