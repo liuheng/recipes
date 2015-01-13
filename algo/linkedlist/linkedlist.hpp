@@ -7,14 +7,14 @@ class Node {
 public:
     Node()
         : next(NULL)
-        , value(-1) {}
+        , value(T()) {}
     Node *next;
     T value;
 };
 
 template <class T>
 void InsertTail(Node<T> *head, const T &Elem) {
-    Node<int> *p = head;
+    Node<T> *p = head;
     while (p->next != NULL) {
         p = p->next;
     }
@@ -25,7 +25,7 @@ void InsertTail(Node<T> *head, const T &Elem) {
 
 template <class T>
 void InsertTail(Node<T> *head, Node<T> *elem) {
-    Node<int> *p = head;
+    Node<T> *p = head;
     while (p->next != NULL) {
         p = p->next;
     }
@@ -34,7 +34,7 @@ void InsertTail(Node<T> *head, Node<T> *elem) {
 
 template <class T>
 void PrintList(Node<T> *head) {
-    Node<int> *p = head->next;
+    Node<T> *p = head->next;
     while (p != NULL) {
         printf("%d -> ", p->value);
         p = p->next;
