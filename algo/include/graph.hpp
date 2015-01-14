@@ -5,17 +5,24 @@
 #include "../linkedlist/linkedlist.hpp"
 
 #define MAX_VERTEX_SIZE 26
+#define POSITIVE_INFINITE ((1 << (sizeof(int) * 8 - 1)) - 1)
+#define NIL '-'
 
 using namespace std;
 
 struct Vertex {
     int p; // 算法运行过程中的parent域
     int d; // 算法运行过程中的distance域
+    int f; // 算法运行过程中的finish域
     int w; // 边(u, v)的权值存在顶点u的邻接表的v中
+    int c; // 顶点的颜色域, 0为白色，1为灰色，2为黑色
     char v; // 节点卫星数据，以字母代替
 
-    Vertex() : v('-'), p('-'), d(-1), w(-1) {}
-    Vertex(char v_, int w_) : v(v_), p('-'), d(-1), w(w_) {}
+    Vertex() : v('-'), p(NIL), d(POSITIVE_INFINITE), f(POSITIVE_INFINITE), w(POSITIVE_INFINITE), c(0) {}
+    Vertex(char v_, int w_) : v(v_), p(NIL), d(POSITIVE_INFINITE), f(POSITIVE_INFINITE), w(POSITIVE_INFINITE), c(0) {}
+    bool operator==(struct Vertex &v1, struct Vertex &v2) {
+        return v1.v == v2.v;
+    }
 };
 
 struct Edge {
