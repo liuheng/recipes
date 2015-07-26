@@ -1,1 +1,1 @@
-useful algorithms and problem solving
+useful algorithms and problem solvings
