@@ -21,9 +21,9 @@ void reverse_kangtuo(int n, int k, char s[]) {
 }
 
 int main() {
-    char s[4] = {0};
-    reverse_kangtuo(4, 7, s);
-    for (int i=0; i<4; ++i) {
+    char s[5] = {0};
+    reverse_kangtuo(5, 20, s);
+    for (int i=0; i<5; ++i) {
         printf("%c ", s[i]);
     }
     printf("\n");

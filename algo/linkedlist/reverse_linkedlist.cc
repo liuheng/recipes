@@ -20,12 +20,13 @@ Node *reverse_linkedlist(Node *root) {
     if (root == NULL || root->next == NULL) return root;
     Node *a = root;
     Node *b = root->next;
+    Node *c = NULL;
     a->next = NULL;
     while (b != NULL) {
-        Node *t = b->next;
+        c = b->next;
         b->next = a;
         a = b;
-        b = t;
+        b = c;
     }
     return a;
 }
